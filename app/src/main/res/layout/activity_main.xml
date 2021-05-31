@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/background"
+    tools:context=".MainActivity"
+        android:background="#6C448D"
+    android:orientation="vertical">
+    <eightbitlab.com.blurview.BlurView
+        android:id="@+id/blurview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:titleTextColor="#fff"
+            android:title="Parking Lot App"
+            android:background="@color/trans"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </eightbitlab.com.blurview.BlurView>
+    <com.google.android.material.tabs.TabLayout
+        app:tabBackground="@drawable/tab_color_selector"
+        android:id="@+id/tab_layout"
+        app:tabMode="fixed"
+        app:tabIndicatorGravity="stretch"
+        app:tabSelectedTextColor="@color/trans"
+        app:tabIconTint="@color/your_color_selector"
+        app:tabIndicator="@drawable/tab_ind"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
